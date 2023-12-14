@@ -12,7 +12,7 @@ var quotes = [
    
 
 function addQuotes(){
-  var select=Math.floor(Math.random()*11);
+  var select=Math.floor(Math.random()*10);
   console.log(select);
    
 document.getElementById('demo').innerHTML=quotes[select];
