@@ -14,7 +14,10 @@ var quotes = [
 function addQuotes(){
   var select=Math.floor(Math.random()*10);
   console.log(select);
-   
+  var oldNumber=select;
+  do{select = Math.floor(Math.random()*10)}
+  while (oldNumber===select);
+  oldNumber = select
 document.getElementById('demo').innerHTML=quotes[select];
 
 }
